@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Poppins', 'sans-serif';
+  background-color: #f2f2f2;
+}
+
+header .bg-img {
+  background-image: url('../assets/img/book.jpg');
+  height: 250px;
+  background-repeat: no-repeat;
+}
+
+main {
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-section {
+  background-color: white;
+  flex-basis: 25%;
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.07);
+  height: 450px;
+}
+
+.head-section {
+  background-color: #243a73;
+  text-align: center;
+  color: white;
+  padding: 20px 0 40px 0;
+}
+
+.head-section h3 {
+  font-size: 26px;
+  letter-spacing: 2px;
+}
+
+.head-section h3 > img {
+  width: 50px;
+}
+
+#inputBook {
+  padding: 25px;
+}
+
+.input {
+  display: block;
+}
+
+.input > input {
+  width: 100%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #243a73;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 16px;
+  color: #243a73;
+}
+
+input:focus {
+  outline: none;
+}
+
+.input_check {
+  color: #243a73;
+  margin-bottom: 20px;
+}
+
+#inputBook button {
+  width: 100%;
+  padding: 10px;
+  background-color: #243a73;
+  border: none;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+
+.right-section {
+  flex-basis: 65%;
+  margin-left: 30px;
+}
+
+.top-bar {
+  display: flex;
+  background-color: white;
+  padding: 25px;
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.title-bar {
+  margin-left: 15px;
+  flex-basis: 65%;
+}
+
+.title-bar h2 {
+  font-size: 30px;
+}
+
+.title-bar p {
+  letter-spacing: 1px;
+  color: #747474;
+  font-weight: 500;
+}
+
+.search_section {
+  flex-basis: 35%;
+  padding: 20px;
+}
+
+#searchBook > input {
+  padding: 7px;
+  border: 1px solid #243a73;
+}
+
+#searchBook > button {
+  background-color: #243a73;
+  border: none;
+  padding: 7px 14px;
+  cursor: pointer;
+}
+
+#searchBook > button > img {
+  width: 15px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.book-menu {
+  margin-top: 30px;
+  display: flex;
+}
+
+.bookshelf {
+  flex-basis: 50%;
+  margin: 10px;
+}
+
+.bookshelf > h3 {
+  text-align: center;
+}
+
+.book-list {
+  width: 100%;
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.07);
+  margin-top: 20px;
+}
+
+article {
+  margin-top: 15px;
+  background-color: white;
+  padding: 20px;
+}
+
+article > img {
+  width: 100px;
+  object-fit: cover;
+  float: right;
+}
+
+.action > button {
+  border: none;
+  margin: 10px 15px 0 0;
+  background-color: white;
+}
+
+.delete-button {
+  width: 30px;
+  height: 30px;
+  background: url('../assets/icons/trash-can-solid.svg');
+  background-size: contain;
+  cursor: pointer;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.read-button {
+  width: 30px;
+  height: 30px;
+  background: url('../assets/icons/square-check-solid.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+}
+
+.undo-button {
+  width: 30px;
+  height: 30px;
+  background: url('../assets/icons/rotate-left-solid.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+}

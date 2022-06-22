@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="bg-img"></div>
+    </header>
+    <main>
+      <section class="input-section">
+        <div class="head-section">
+          <h3>
+            <img src="assets/icons/book-open-solid.svg" alt="svg" /><br />
+            Bookshelf Apps
+          </h3>
+        </div>
+        <form action="#" id="inputBook">
+          <div class="input">
+            <input id="bookTitle" type="text" placeholder="Title" required />
+          </div>
+          <div class="input">
+            <input id="authorBook" type="text" placeholder="Author" required />
+          </div>
+          <div class="input">
+            <input id="yearBook" type="number" placeholder="Year" required />
+          </div>
+          <div class="input_check">
+            <label for="bookIsComplete">Complete read</label>
+            <input type="checkbox" id="bookIsComplete" />
+          </div>
+          <button type="submit" id="bookSubmit">Add new book</button>
+        </form>
+      </section>
+
+      <section class="right-section">
+        <div class="top-bar">
+          <div class="title-bar">
+            <h2>Welcome to Bookshelf-Apps</h2>
+            <p>Manage your books with bookshelf apps</p>
+          </div>
+          <div class="search_section">
+            <form id="searchBook">
+              <input type="text" id="searchTitle" placeholder="Search book" />
+              <button id="submitSearch" type="submit"><img src="assets/icons/magnifying-glass-solid.svg" alt="img-btn" /></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="book-menu">
+          <div class="bookshelf">
+            <h3>Belum selesai dibaca</h3>
+            <div id="incompleteBookshelfList" class="book-list"></div>
+          </div>
+
+          <div class="bookshelf">
+            <h3>Selesai dibaca</h3>
+            <div id="completeBookshelfList" class="book-list"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
